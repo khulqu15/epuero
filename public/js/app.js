@@ -24561,7 +24561,7 @@ var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
   "class": "w-max p-3 -ml-3"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
   "class": "text-sm tracking-wide text-blue-600"
-}, "Create")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" an account ")])])])])], -1
+}, "Create an account.")])])])])])], -1
 /* HOISTED */
 );
 
