@@ -23277,18 +23277,11 @@ __webpack_require__.r(__webpack_exports__);
 var _hoisted_1 = {
   key: 0
 };
-
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "font-medium text-red-600"
-}, " Whoops! Something went wrong. ", -1
-/* HOISTED */
-);
-
-var _hoisted_3 = {
+var _hoisted_2 = {
   "class": "mt-3 list-disc list-inside text-sm text-red-600"
 };
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return $setup.hasErrors ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [_hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", _hoisted_3, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($setup.errors, function (error, key) {
+  return $setup.hasErrors ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", _hoisted_2, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($setup.errors, function (error, key) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("li", {
       key: key
     }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(error), 1
@@ -24541,38 +24534,70 @@ var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
 /* HOISTED */
 );
 
-var _hoisted_6 = {
-  action: "",
-  "class": "space-y-6 py-6 mt-8"
+var _hoisted_6 = ["onSubmit"];
+
+var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+  "class": "fa-solid fa-landmark"
+}, null, -1
+/* HOISTED */
+);
+
+var _hoisted_8 = {
+  "class": "flex flex-col items-end"
 };
 
-var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div><i class=\"fa-solid fa-landmark\"></i><input type=\"email\" placeholder=\"Email Address\" class=\"text-sm w-full py-3 px-6 ring-gray-50 border-gray-300 rounded-lg bg-transparent transition disabled:ring-gray-50 disabled:bg-gray-50 disabled:placeholder-gray-100\"></div><div class=\"flex flex-col items-end\"><input type=\"password\" placeholder=\"Password\" class=\"text-sm w-full py-3 px-6 ring-gray-50 border-gray-300 rounded-lg bg-transparent transition disabled:ring-gray-50 disabled:bg-gray-50 disabled:placeholder-gray-100\"></div><input type=\"checkbox\" name=\"rememberme\" id=\"toggle\" class=\"hidden\"><label for=\"toggle\"><div class=\"flex\"><div class=\"mt-5 p-1 w-11 h-6 bg-white rounded-full inline-flex items-center border border-gray-400 cursor-pointer toggle-cover\"><div class=\"w-4 h-4 bg-gray-300 rounded-full toggle-circle\"></div></div><span class=\"ml-4 text-sm text-slate-500 mt-[1.4rem]\">Remember me</span></div></label>", 4);
+var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<label for=\"toggle\"><div class=\"flex\"><div class=\"mt-5 p-1 w-11 h-6 bg-white rounded-full inline-flex items-center border border-gray-400 cursor-pointer toggle-cover\"><div class=\"w-4 h-4 bg-gray-300 rounded-full toggle-circle\"></div></div><span class=\"ml-4 text-sm text-slate-500 mt-[1.4rem]\">Remember me</span></div></label>", 1);
 
-var _hoisted_11 = {
+var _hoisted_10 = {
   "class": "text-center text-sm text-slate-500"
 };
+var _hoisted_11 = ["disabled"];
 
-var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<button class=\"w-full px-6 py-4 rounded-full bg-blue-600 transition active:ring-4\"><span class=\"font-semibold text-md text-white\">Confirm</span></button> Don&#39;t have an account ? <a href=\"#\" type=\"reset\" class=\"w-max p-3 -ml-3\"><span class=\"text-sm tracking-wide text-blue-600\">Create an account.</span></a><span class=\"block my-4\">Or Login With</span>", 4);
+var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+  "class": "font-semibold text-md text-white"
+}, "Confirm", -1
+/* HOISTED */
+);
 
-var _hoisted_16 = {
+var _hoisted_13 = [_hoisted_12];
+
+var _hoisted_14 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Don't have an account ? ");
+
+var _hoisted_15 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+  href: "register",
+  type: "reset",
+  "class": "w-max p-3 -ml-3"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+  "class": "text-sm tracking-wide text-blue-600"
+}, "Create an account.")], -1
+/* HOISTED */
+);
+
+var _hoisted_16 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+  "class": "block my-4"
+}, "Or Login With", -1
+/* HOISTED */
+);
+
+var _hoisted_17 = {
   "class": "space-x-5"
 };
-var _hoisted_17 = {
-  href: "#"
-};
 var _hoisted_18 = {
-  "class": "w-12 h-12 bg-gray-300 rounded-full inline-flex"
+  href: "#"
 };
 var _hoisted_19 = {
-  "class": "icon mx-auto text-2xl mt-3"
-};
-var _hoisted_20 = {
-  href: "#"
-};
-var _hoisted_21 = {
   "class": "w-12 h-12 bg-gray-300 rounded-full inline-flex"
 };
+var _hoisted_20 = {
+  "class": "icon mx-auto text-2xl mt-3"
+};
+var _hoisted_21 = {
+  href: "#"
+};
 var _hoisted_22 = {
+  "class": "w-12 h-12 bg-gray-300 rounded-full inline-flex"
+};
+var _hoisted_23 = {
   "class": "icon mx-auto text-2xl mt-3"
 };
 function render(_ctx, _cache, $props, $setup, $data, $options) {
@@ -24580,11 +24605,53 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Head"], {
     title: "Log in"
-  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [_hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [_hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("form", _hoisted_6, [_hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_11, [_hoisted_12, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_16, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_17, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_18, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_19, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_ion_icon, {
+  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Banner "), _hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Section Login "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [_hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["JetValidationErrors"], {
+    "class": "mb-4"
+  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Form Login "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("form", {
+    onSubmit: (0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)($setup.submit, ["prevent"]),
+    "class": "space-y-6 py-6"
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [_hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
+    "onUpdate:modelValue": _cache[0] || (_cache[0] = function ($event) {
+      return $setup.form.email = $event;
+    }),
+    type: "email",
+    placeholder: "Email Address",
+    "class": "text-sm w-full py-3 px-6 ring-gray-50 border-gray-300 rounded-lg bg-transparent transition disabled:ring-gray-50 disabled:bg-gray-50 disabled:placeholder-gray-100",
+    required: ""
+  }, null, 512
+  /* NEED_PATCH */
+  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $setup.form.email]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
+    "onUpdate:modelValue": _cache[1] || (_cache[1] = function ($event) {
+      return $setup.form.password = $event;
+    }),
+    type: "password",
+    placeholder: "Password",
+    "class": "text-sm w-full py-3 px-6 ring-gray-50 border-gray-300 rounded-lg bg-transparent transition disabled:ring-gray-50 disabled:bg-gray-50 disabled:placeholder-gray-100",
+    required: ""
+  }, null, 512
+  /* NEED_PATCH */
+  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $setup.form.password]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
+    type: "checkbox",
+    "onUpdate:modelValue": _cache[2] || (_cache[2] = function ($event) {
+      return $setup.form.remember = $event;
+    }),
+    name: "remember",
+    id: "toggle",
+    "class": "hidden"
+  }, null, 512
+  /* NEED_PATCH */
+  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelCheckbox, $setup.form.remember]]), _hoisted_9, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+    "class": "w-full px-6 py-4 rounded-full bg-blue-600 transition active:ring-4",
+    disabled: $setup.form.processing
+  }, _hoisted_13, 8
+  /* PROPS */
+  , _hoisted_11), _hoisted_14, _hoisted_15, _hoisted_16, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_17, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_18, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_19, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_20, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_ion_icon, {
     name: "logo-google"
-  })])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_20, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_21, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_22, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_ion_icon, {
+  })])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_21, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_22, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_23, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_ion_icon, {
     name: "logo-facebook"
-  })])])])])])])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <JetAuthenticationCard>\n        <template #logo>\n            <JetAuthenticationCardLogo/>\n        </template>\n\n        <JetValidationErrors class=\"mb-4\" />\n\n        <div v-if=\"status\" class=\"mb-4 font-medium text-sm text-green-600\">\n            {{ status }}\n        </div>\n\n        \n        <form @submit.prevent=\"submit\">\n            <div>\n                <JetLabel for=\"email\" value=\"Email\" />\n                <JetInput\n                    id=\"email\"\n                    v-model=\"form.email\"\n                    type=\"email\"\n                    class=\"mt-1 block w-full\"\n                    required\n                    autofocus\n                />\n            </div>\n\n            <div class=\"mt-4\">\n                <JetLabel for=\"password\" value=\"Password\" />\n                <JetInput\n                    id=\"password\"\n                    v-model=\"form.password\"\n                    type=\"password\"\n                    class=\"mt-1 block w-full\"\n                    required\n                    autocomplete=\"current-password\"\n                />\n            </div>\n\n            <div class=\"block mt-4\">\n                <label class=\"flex items-center\">\n                    <JetCheckbox v-model:checked=\"form.remember\" name=\"remember\" />\n                    <span class=\"ml-2 text-sm text-gray-600\">Remember me</span>\n                </label>\n            </div>\n\n            <div class=\"flex items-center justify-end mt-4\">\n                <Link v-if=\"canResetPassword\" :href=\"route('password.request')\" class=\"underline text-sm text-gray-600 hover:text-gray-900\">\n                    Forgot your password ? \n                </Link>\n\n                <JetButton class=\"ml-4\" :class=\"{ 'opacity-25': form.processing }\" :disabled=\"form.processing\">\n                    Login\n                </JetButton>\n            </div>\n        </form>\n    </JetAuthenticationCard> ")], 64
+  })])])])])])], 40
+  /* PROPS, HYDRATE_EVENTS */
+  , _hoisted_6)])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <JetAuthenticationCard>\n        <template #logo>\n            <JetAuthenticationCardLogo/>\n        </template>\n\n        <JetValidationErrors class=\"mb-4\" />\n\n        <div v-if=\"status\" class=\"mb-4 font-medium text-sm text-green-600\">\n            {{ status }}\n        </div>\n\n        \n        <form @submit.prevent=\"submit\">\n            <div>\n                <JetLabel for=\"email\" value=\"Email\" />\n                <JetInput\n                    id=\"email\"\n                    v-model=\"form.email\"\n                    type=\"email\"\n                    class=\"mt-1 block w-full\"\n                    required\n                    autofocus\n                />\n            </div>\n\n            <div class=\"mt-4\">\n                <JetLabel for=\"password\" value=\"Password\" />\n                <JetInput\n                    id=\"password\"\n                    v-model=\"form.password\"\n                    type=\"password\"\n                    class=\"mt-1 block w-full\"\n                    required\n                    autocomplete=\"current-password\"\n                />\n            </div>\n\n            <div class=\"block mt-4\">\n                <label class=\"flex items-center\">\n                    <JetCheckbox v-model:checked=\"form.remember\" name=\"remember\" />\n                    <span class=\"ml-2 text-sm text-gray-600\">Remember me</span>\n                </label>\n            </div>\n\n            <div class=\"flex items-center justify-end mt-4\">\n                <Link v-if=\"canResetPassword\" :href=\"route('password.request')\" class=\"underline text-sm text-gray-600 hover:text-gray-900\">\n                    Forgot your password ? \n                </Link>\n\n                <JetButton class=\"ml-4\" :class=\"{ 'opacity-25': form.processing }\" :disabled=\"form.processing\">\n                    Login\n                </JetButton>\n            </div>\n        </form>\n    </JetAuthenticationCard> ")], 64
   /* STABLE_FRAGMENT */
   );
 }

@@ -33,6 +33,7 @@ const submit = () => {
     <Head title="Log in" />
 
     <div class="2xl:container h-screen m-auto">
+        <!-- Banner -->
         <div hidden class="fixed inset-0 w-full lg:block bg-gray-50">
             <img class="mt-4 ml-4 w-36" src="../../Assets/img/logo-text.png" alt="">
             <img class="w-1/6 absolute -translate-y-52 top-1/2 left-24 md:w-1/5" src="../../Assets/img/img-1.png" alt="">
@@ -40,6 +41,7 @@ const submit = () => {
             <img class="w-1/4 absolute -translate-y-40 top-1/2 left-52" src="../../Assets/img/img-2.png" alt="">
         </div>
         
+        <!-- Section Login -->
         <div class="relative h-full ml-auto lg:w-5/12 bg-white">
             <div class="m-auto py-12 px-6 sm:p-20 xl:w-10/12">
                 <div class="space-y-4">
@@ -47,24 +49,32 @@ const submit = () => {
                     <p class="text-sm text-gray-600">Welcome back to your account</p>
                 </div>
 
-                <form action="" class="space-y-6 py-6 mt-8">
+                <JetValidationErrors class="mb-4" />
+
+                <!-- Form Login -->
+                <form @submit.prevent="submit" class="space-y-6 py-6">
                     <div>
                         <i class="fa-solid fa-landmark"></i>
                         <input 
+                                v-model="form.email"
                                 type="email" 
                                 placeholder="Email Address"
                                 class="text-sm w-full py-3 px-6 ring-gray-50 border-gray-300 rounded-lg bg-transparent transition disabled:ring-gray-50 disabled:bg-gray-50 disabled:placeholder-gray-100"
+                                required
                         >
                     </div>
 
                     <div class="flex flex-col items-end">
                         <input 
+                                v-model="form.password"
                                 type="password" 
                                 placeholder="Password"
                                 class="text-sm w-full py-3 px-6 ring-gray-50 border-gray-300 rounded-lg bg-transparent transition disabled:ring-gray-50 disabled:bg-gray-50 disabled:placeholder-gray-100"
+                                required
                         >
                     </div>
-                    <input type="checkbox" name="rememberme" id="toggle" class="hidden">
+
+                    <input type="checkbox" v-model="form.remember" name="remember" id="toggle" class="hidden"> 
                     <label for="toggle">
                         <div class="flex">
                             <div class="mt-5 p-1 w-11 h-6 bg-white rounded-full inline-flex items-center border border-gray-400 cursor-pointer toggle-cover">
@@ -75,34 +85,36 @@ const submit = () => {
                     </label>
 
                     <div class="text-center text-sm text-slate-500">
-                        <button class="w-full px-6 py-4 rounded-full bg-blue-600 transition active:ring-4">
+                        
+                        <button class="w-full px-6 py-4 rounded-full bg-blue-600 transition active:ring-4" :disabled="form.processing">
                             <span class="font-semibold text-md text-white">Confirm</span>
                         </button>
-                        Don't have an account ?
-                        <a href="#" type="reset" class="w-max p-3 -ml-3">
+                            Don't have an account ?
+                        <a href="register" type="reset" class="w-max p-3 -ml-3">
                            <span class="text-sm tracking-wide text-blue-600">Create an account.</span>
                         </a>
+
                         <span class="block my-4">Or Login With</span>
+
                         <div class="space-x-5">
-                        <a href="#">
-                        <div class="w-12 h-12 bg-gray-300 rounded-full inline-flex">
-                            <div class="icon mx-auto text-2xl mt-3">
-                                <ion-icon name="logo-google"></ion-icon>
-                            </div>
+                            <a href="#">
+                                <div class="w-12 h-12 bg-gray-300 rounded-full inline-flex">
+                                    <div class="icon mx-auto text-2xl mt-3">
+                                        <ion-icon name="logo-google"></ion-icon>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="w-12 h-12 bg-gray-300 rounded-full inline-flex">
+                                    <div class="icon mx-auto text-2xl mt-3">
+                                        <ion-icon name="logo-facebook"></ion-icon>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
-                        </a>
-                        <a href="#">
-                        <div class="w-12 h-12 bg-gray-300 rounded-full inline-flex">
-                            <div class="icon mx-auto text-2xl mt-3">
-                                <ion-icon name="logo-facebook"></ion-icon>
-                            </div>
-                        </div>
-                        </a>
-                        </div>
+
                     </div>
                 </form>
-                    
-
             </div>
         </div>
     </div>
