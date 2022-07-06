@@ -24509,66 +24509,82 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* binding */ render)
 /* harmony export */ });
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
-/* harmony import */ var _Assets_wallpp_login_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../Assets/wallpp-login.jpg */ "./resources/js/Assets/wallpp-login.jpg");
+/* harmony import */ var _Assets_img_logo_text_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../Assets/img/logo-text.png */ "./resources/js/Assets/img/logo-text.png");
+/* harmony import */ var _Assets_img_img_1_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../Assets/img/img-1.png */ "./resources/js/Assets/img/img-1.png");
+/* harmony import */ var _Assets_img_plane_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../Assets/img/plane.png */ "./resources/js/Assets/img/plane.png");
+/* harmony import */ var _Assets_img_img_2_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../Assets/img/img-2.png */ "./resources/js/Assets/img/img-2.png");
 
 
 
-var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+
+
+var _hoisted_1 = {
   "class": "2xl:container h-screen m-auto"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  hidden: "",
-  "class": "fixed inset-0 w-7/12 lg:block"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
-  "class": "wallpp-login",
-  src: _Assets_wallpp_login_jpg__WEBPACK_IMPORTED_MODULE_1__["default"],
-  alt: "Epuero"
-})]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  hidden: "",
-  role: "hidden",
-  "class": "fixed inset-0 w-6/12 ml-auto bg-white bg-opacity-70 backdrop-blur-xl lg:block"
-}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "relative h-full ml-auto lg:w-6/12"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+};
+
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div hidden class=\"fixed inset-0 w-full lg:block bg-gray-50\"><img class=\"mt-4 ml-4 w-36\" src=\"" + _Assets_img_logo_text_png__WEBPACK_IMPORTED_MODULE_1__["default"] + "\" alt=\"\"><img class=\"w-1/6 absolute -translate-y-52 top-1/2 left-24 md:w-1/5\" src=\"" + _Assets_img_img_1_png__WEBPACK_IMPORTED_MODULE_2__["default"] + "\" alt=\"\"><img class=\"w-3/5 absolute bottom-0 left-0\" src=\"" + _Assets_img_plane_png__WEBPACK_IMPORTED_MODULE_3__["default"] + "\" alt=\"plane\"><img class=\"w-1/4 absolute -translate-y-40 top-1/2 left-52\" src=\"" + _Assets_img_img_2_png__WEBPACK_IMPORTED_MODULE_4__["default"] + "\" alt=\"\"></div>", 1);
+
+var _hoisted_3 = {
+  "class": "relative h-full ml-auto lg:w-5/12 bg-white"
+};
+var _hoisted_4 = {
   "class": "m-auto py-12 px-6 sm:p-20 xl:w-10/12"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+};
+
+var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "space-y-4"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", {
-  "class": "font-medium leading-tight text-4xl mt-0 mb-2 text-blue-600"
+  "class": "font-bold leading-tight text-3xl text-blue-600"
 }, "Login"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
-  "class": "font-medium text-lg text-gray-600"
-}, "Welcome back to your account")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("form", {
-  action: "",
-  "class": "space-y-6 py-6"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
-  type: "email",
-  placeholder: "Email Address",
-  "class": "w-full py-3 px-6 ring-1 ring-gray-300 rounded-xl bg-transparent transition disabled:ring-gray-200 disabled:bg-gray-100 disabled:placeholder-gray-400"
-})]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "flex flex-col items-end"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
-  type: "password",
-  placeholder: "Password",
-  "class": "w-full py-3 px-6 ring-1 ring-gray-300 rounded-xl bg-transparent transition disabled:ring-gray-200 disabled:bg-gray-100 disabled:placeholder-gray-400"
-})]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "text-center"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
-  "class": "w-full px-6 py-3 rounded-full bg-blue-600 transition active:bg-sky-800"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
-  "class": "font-semibold text-white text-lg"
-}, "Confirm")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Don't have an account ? "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
-  href: "#",
-  type: "reset",
-  "class": "w-max p-3 -ml-3"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
-  "class": "text-sm tracking-wide text-blue-600"
-}, "Create an account.")])])])])])], -1
+  "class": "text-sm text-gray-600"
+}, "Welcome back to your account")], -1
 /* HOISTED */
 );
 
+var _hoisted_6 = {
+  action: "",
+  "class": "space-y-6 py-6 mt-8"
+};
+
+var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div><i class=\"fa-solid fa-landmark\"></i><input type=\"email\" placeholder=\"Email Address\" class=\"text-sm w-full py-3 px-6 ring-gray-50 rounded-lg bg-transparent transition disabled:ring-gray-50 disabled:bg-gray-50 disabled:placeholder-gray-100\"></div><div class=\"flex flex-col items-end\"><input type=\"password\" placeholder=\"Password\" class=\"text-sm w-full py-3 px-6 ring-gray-50 rounded-lg bg-transparent transition disabled:ring-gray-50 disabled:bg-gray-50 disabled:placeholder-gray-100\"></div><input type=\"checkbox\" name=\"rememberme\" id=\"toggle\" class=\"hidden\"><label for=\"toggle\"><div class=\"flex\"><div class=\"mt-5 p-1 w-11 h-6 bg-white rounded-full inline-flex items-center border border-gray-400 cursor-pointer toggle-cover\"><div class=\"w-4 h-4 bg-gray-300 rounded-full toggle-circle\"></div></div><span class=\"ml-4 text-sm text-slate-500 mt-[1.4rem]\">Remember me</span></div></label>", 4);
+
+var _hoisted_11 = {
+  "class": "text-center text-sm text-slate-500"
+};
+
+var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<button class=\"w-full px-6 py-4 rounded-full bg-blue-600 transition active:bg-sky-800\"><span class=\"font-semibold text-md text-white\">Confirm</span></button> Don&#39;t have an account ? <a href=\"#\" type=\"reset\" class=\"w-max p-3 -ml-3\"><span class=\"text-sm tracking-wide text-blue-600\">Create an account.</span></a><span class=\"block my-4\">Or Login With</span>", 4);
+
+var _hoisted_16 = {
+  "class": "space-x-5"
+};
+var _hoisted_17 = {
+  href: "#"
+};
+var _hoisted_18 = {
+  "class": "w-12 h-12 bg-gray-300 rounded-full inline-flex"
+};
+var _hoisted_19 = {
+  "class": "icon mx-auto text-2xl mt-3"
+};
+var _hoisted_20 = {
+  href: "#"
+};
+var _hoisted_21 = {
+  "class": "w-12 h-12 bg-gray-300 rounded-full inline-flex"
+};
+var _hoisted_22 = {
+  "class": "icon mx-auto text-2xl mt-3"
+};
 function render(_ctx, _cache, $props, $setup, $data, $options) {
+  var _component_ion_icon = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("ion-icon");
+
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Head"], {
     title: "Log in"
-  }), _hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <JetAuthenticationCard>\n        <template #logo>\n            <JetAuthenticationCardLogo/>\n        </template>\n\n        <JetValidationErrors class=\"mb-4\" />\n\n        <div v-if=\"status\" class=\"mb-4 font-medium text-sm text-green-600\">\n            {{ status }}\n        </div>\n\n        \n        <form @submit.prevent=\"submit\">\n            <div>\n                <JetLabel for=\"email\" value=\"Email\" />\n                <JetInput\n                    id=\"email\"\n                    v-model=\"form.email\"\n                    type=\"email\"\n                    class=\"mt-1 block w-full\"\n                    required\n                    autofocus\n                />\n            </div>\n\n            <div class=\"mt-4\">\n                <JetLabel for=\"password\" value=\"Password\" />\n                <JetInput\n                    id=\"password\"\n                    v-model=\"form.password\"\n                    type=\"password\"\n                    class=\"mt-1 block w-full\"\n                    required\n                    autocomplete=\"current-password\"\n                />\n            </div>\n\n            <div class=\"block mt-4\">\n                <label class=\"flex items-center\">\n                    <JetCheckbox v-model:checked=\"form.remember\" name=\"remember\" />\n                    <span class=\"ml-2 text-sm text-gray-600\">Remember me</span>\n                </label>\n            </div>\n\n            <div class=\"flex items-center justify-end mt-4\">\n                <Link v-if=\"canResetPassword\" :href=\"route('password.request')\" class=\"underline text-sm text-gray-600 hover:text-gray-900\">\n                    Forgot your password ? \n                </Link>\n\n                <JetButton class=\"ml-4\" :class=\"{ 'opacity-25': form.processing }\" :disabled=\"form.processing\">\n                    Login\n                </JetButton>\n            </div>\n        </form>\n    </JetAuthenticationCard> ")], 64
+  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [_hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [_hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("form", _hoisted_6, [_hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_11, [_hoisted_12, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_16, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_17, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_18, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_19, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_ion_icon, {
+    name: "logo-google"
+  })])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_20, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_21, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_22, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_ion_icon, {
+    name: "logo-facebook"
+  })])])])])])])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <JetAuthenticationCard>\n        <template #logo>\n            <JetAuthenticationCardLogo/>\n        </template>\n\n        <JetValidationErrors class=\"mb-4\" />\n\n        <div v-if=\"status\" class=\"mb-4 font-medium text-sm text-green-600\">\n            {{ status }}\n        </div>\n\n        \n        <form @submit.prevent=\"submit\">\n            <div>\n                <JetLabel for=\"email\" value=\"Email\" />\n                <JetInput\n                    id=\"email\"\n                    v-model=\"form.email\"\n                    type=\"email\"\n                    class=\"mt-1 block w-full\"\n                    required\n                    autofocus\n                />\n            </div>\n\n            <div class=\"mt-4\">\n                <JetLabel for=\"password\" value=\"Password\" />\n                <JetInput\n                    id=\"password\"\n                    v-model=\"form.password\"\n                    type=\"password\"\n                    class=\"mt-1 block w-full\"\n                    required\n                    autocomplete=\"current-password\"\n                />\n            </div>\n\n            <div class=\"block mt-4\">\n                <label class=\"flex items-center\">\n                    <JetCheckbox v-model:checked=\"form.remember\" name=\"remember\" />\n                    <span class=\"ml-2 text-sm text-gray-600\">Remember me</span>\n                </label>\n            </div>\n\n            <div class=\"flex items-center justify-end mt-4\">\n                <Link v-if=\"canResetPassword\" :href=\"route('password.request')\" class=\"underline text-sm text-gray-600 hover:text-gray-900\">\n                    Forgot your password ? \n                </Link>\n\n                <JetButton class=\"ml-4\" :class=\"{ 'opacity-25': form.processing }\" :disabled=\"form.processing\">\n                    Login\n                </JetButton>\n            </div>\n        </form>\n    </JetAuthenticationCard> ")], 64
   /* STABLE_FRAGMENT */
   );
 }
@@ -26339,7 +26355,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("h1", null, "Epuero Website");
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("h1", null, "Welcome to EPUERO WEB");
 }
 
 /***/ }),
@@ -26525,7 +26541,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.wallpp-login{\n        height: 100%;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n#toggle:checked ~ label div.toggle-circle {\n        transform: translateX(1.2rem);\n        background-color: white;\n}\n#toggle:checked ~ label div.toggle-cover {\n        background-color: rgb(37 99 235 / var(--tw-bg-opacity));\n        border: none;\n}\n#toggle:checked ~ label span {\n        color: rgb(73, 68, 68);\n}\n.toggle-circle {\n        transition: ease 0.1s;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -26776,10 +26792,10 @@ module.exports = deepmerge_1;
 
 /***/ }),
 
-/***/ "./resources/js/Assets/wallpp-login.jpg":
-/*!**********************************************!*\
-  !*** ./resources/js/Assets/wallpp-login.jpg ***!
-  \**********************************************/
+/***/ "./resources/js/Assets/img/img-1.png":
+/*!*******************************************!*\
+  !*** ./resources/js/Assets/img/img-1.png ***!
+  \*******************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -26787,7 +26803,52 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/wallpp-login.jpg?f0455626c41b462b455e76ef5181daa7");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/img-1.png?31ad14234d02ccda3a1a3b691596ca5d");
+
+/***/ }),
+
+/***/ "./resources/js/Assets/img/img-2.png":
+/*!*******************************************!*\
+  !*** ./resources/js/Assets/img/img-2.png ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/img-2.png?40c70adf2cc2a374892db0c0509db14c");
+
+/***/ }),
+
+/***/ "./resources/js/Assets/img/logo-text.png":
+/*!***********************************************!*\
+  !*** ./resources/js/Assets/img/logo-text.png ***!
+  \***********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/logo-text.png?e514332267c8b5fd70e4f238ec3a1ece");
+
+/***/ }),
+
+/***/ "./resources/js/Assets/img/plane.png":
+/*!*******************************************!*\
+  !*** ./resources/js/Assets/img/plane.png ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/plane.png?919551e35ba6dd7945229188604a9a75");
 
 /***/ }),
 

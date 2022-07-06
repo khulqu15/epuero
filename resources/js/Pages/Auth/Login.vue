@@ -33,23 +33,27 @@ const submit = () => {
     <Head title="Log in" />
 
     <div class="2xl:container h-screen m-auto">
-        <div hidden class="fixed inset-0 w-7/12 lg:block">
-            <img class="wallpp-login" src="../../Assets/wallpp-login.jpg" alt="Epuero">
+        <div hidden class="fixed inset-0 w-full lg:block bg-gray-50">
+            <img class="mt-4 ml-4 w-36" src="../../Assets/img/logo-text.png" alt="">
+            <img class="w-1/6 absolute -translate-y-52 top-1/2 left-24 md:w-1/5" src="../../Assets/img/img-1.png" alt="">
+            <img class="w-3/5 absolute bottom-0 left-0" src="../../Assets/img/plane.png" alt="plane">
+            <img class="w-1/4 absolute -translate-y-40 top-1/2 left-52" src="../../Assets/img/img-2.png" alt="">
         </div>
-        <div hidden role="hidden" class="fixed inset-0 w-6/12 ml-auto bg-white bg-opacity-70 backdrop-blur-xl lg:block"></div>
-        <div class="relative h-full ml-auto lg:w-6/12">
+        
+        <div class="relative h-full ml-auto lg:w-5/12 bg-white">
             <div class="m-auto py-12 px-6 sm:p-20 xl:w-10/12">
                 <div class="space-y-4">
-                    <h1 class="font-medium leading-tight text-4xl mt-0 mb-2 text-blue-600">Login</h1>
-                    <p class="font-medium text-lg text-gray-600">Welcome back to your account</p>
+                    <h1 class="font-bold leading-tight text-3xl text-blue-600">Login</h1>
+                    <p class="text-sm text-gray-600">Welcome back to your account</p>
                 </div>
 
-                <form action="" class="space-y-6 py-6">
+                <form action="" class="space-y-6 py-6 mt-8">
                     <div>
+                        <i class="fa-solid fa-landmark"></i>
                         <input 
                                 type="email" 
                                 placeholder="Email Address"
-                                class="w-full py-3 px-6 ring-1 ring-gray-300 rounded-xl bg-transparent transition disabled:ring-gray-200 disabled:bg-gray-100 disabled:placeholder-gray-400"
+                                class="text-sm w-full py-3 px-6 ring-gray-50 rounded-lg bg-transparent transition disabled:ring-gray-50 disabled:bg-gray-50 disabled:placeholder-gray-100"
                         >
                     </div>
 
@@ -57,18 +61,44 @@ const submit = () => {
                         <input 
                                 type="password" 
                                 placeholder="Password"
-                                class="w-full py-3 px-6 ring-1 ring-gray-300 rounded-xl bg-transparent transition disabled:ring-gray-200 disabled:bg-gray-100 disabled:placeholder-gray-400"
+                                class="text-sm w-full py-3 px-6 ring-gray-50 rounded-lg bg-transparent transition disabled:ring-gray-50 disabled:bg-gray-50 disabled:placeholder-gray-100"
                         >
                     </div>
+                    <input type="checkbox" name="rememberme" id="toggle" class="hidden">
+                    <label for="toggle">
+                        <div class="flex">
+                            <div class="mt-5 p-1 w-11 h-6 bg-white rounded-full inline-flex items-center border border-gray-400 cursor-pointer toggle-cover">
+                                <div class="w-4 h-4 bg-gray-300 rounded-full toggle-circle"></div>
+                            </div>
+                            <span class="ml-4 text-sm text-slate-500 mt-[1.4rem]">Remember me</span>
+                        </div>
+                    </label>
 
-                    <div class="text-center">
-                        <button class="w-full px-6 py-3 rounded-full bg-blue-600 transition active:bg-sky-800">
-                            <span class="font-semibold text-white text-lg">Confirm</span>
+                    <div class="text-center text-sm text-slate-500">
+                        <button class="w-full px-6 py-4 rounded-full bg-blue-600 transition active:bg-sky-800">
+                            <span class="font-semibold text-md text-white">Confirm</span>
                         </button>
                         Don't have an account ?
                         <a href="#" type="reset" class="w-max p-3 -ml-3">
                            <span class="text-sm tracking-wide text-blue-600">Create an account.</span>
                         </a>
+                        <span class="block my-4">Or Login With</span>
+                        <div class="space-x-5">
+                        <a href="#">
+                        <div class="w-12 h-12 bg-gray-300 rounded-full inline-flex">
+                            <div class="icon mx-auto text-2xl mt-3">
+                                <ion-icon name="logo-google"></ion-icon>
+                            </div>
+                        </div>
+                        </a>
+                        <a href="#">
+                        <div class="w-12 h-12 bg-gray-300 rounded-full inline-flex">
+                            <div class="icon mx-auto text-2xl mt-3">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </div>
+                        </div>
+                        </a>
+                        </div>
                     </div>
                 </form>
                     
@@ -136,7 +166,21 @@ const submit = () => {
 </template>
 
 <style>
-    .wallpp-login{
-        height: 100%;
+    #toggle:checked ~ label div.toggle-circle {
+        transform: translateX(1.2rem);
+        background-color: white;
+    }
+
+    #toggle:checked ~ label div.toggle-cover {
+        background-color: rgb(37 99 235 / var(--tw-bg-opacity));
+        border: none;
+    }
+
+    #toggle:checked ~ label span {
+        color: rgb(73, 68, 68);
+    }
+
+    .toggle-circle {
+        transition: ease 0.1s;
     }
 </style>
