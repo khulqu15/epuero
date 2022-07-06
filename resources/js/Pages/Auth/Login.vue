@@ -53,7 +53,7 @@ const submit = () => {
                         <input 
                                 type="email" 
                                 placeholder="Email Address"
-                                class="text-sm w-full py-3 px-6 ring-gray-50 rounded-lg bg-transparent transition disabled:ring-gray-50 disabled:bg-gray-50 disabled:placeholder-gray-100"
+                                class="text-sm w-full py-3 px-6 ring-gray-50 border-gray-300 rounded-lg bg-transparent transition disabled:ring-gray-50 disabled:bg-gray-50 disabled:placeholder-gray-100"
                         >
                     </div>
 
@@ -61,7 +61,7 @@ const submit = () => {
                         <input 
                                 type="password" 
                                 placeholder="Password"
-                                class="text-sm w-full py-3 px-6 ring-gray-50 rounded-lg bg-transparent transition disabled:ring-gray-50 disabled:bg-gray-50 disabled:placeholder-gray-100"
+                                class="text-sm w-full py-3 px-6 ring-gray-50 border-gray-300 rounded-lg bg-transparent transition disabled:ring-gray-50 disabled:bg-gray-50 disabled:placeholder-gray-100"
                         >
                     </div>
                     <input type="checkbox" name="rememberme" id="toggle" class="hidden">
@@ -75,7 +75,7 @@ const submit = () => {
                     </label>
 
                     <div class="text-center text-sm text-slate-500">
-                        <button class="w-full px-6 py-4 rounded-full bg-blue-600 transition active:bg-sky-800">
+                        <button class="w-full px-6 py-4 rounded-full bg-blue-600 transition active:ring-4">
                             <span class="font-semibold text-md text-white">Confirm</span>
                         </button>
                         Don't have an account ?
