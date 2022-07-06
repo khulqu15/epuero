@@ -86,13 +86,16 @@ const submit = () => {
 
                     <div class="text-center text-sm text-slate-500">
                         
-                        <button class="w-full px-6 py-4 rounded-full bg-blue-600 transition active:ring-4" :disabled="form.processing">
+                        <button class="w-full px-6 py-4 rounded-full bg-blue-600 transition active:ring-4 mb-3" :disabled="form.processing">
                             <span class="font-semibold text-md text-white">Confirm</span>
                         </button>
-                            Don't have an account ?
-                        <a href="register" type="reset" class="w-max p-3 -ml-3">
+                        <span>Don't have an account ?</span>
+                        <Link :href="route('register')" class="text-sm text-blue-600">
+                            Create an account.
+                        </Link>
+                        <!-- <a href="register" type="reset" class="w-max p-3 -ml-3">
                            <span class="text-sm tracking-wide text-blue-600">Create an account.</span>
-                        </a>
+                        </a> -->
 
                         <span class="block my-4">Or Login With</span>
 

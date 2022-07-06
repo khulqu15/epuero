@@ -11,6 +11,7 @@ defineProps({
 
 <template>
 <h1>Welcome to EPUERO WEB</h1>
+<a href="login">Login disini</a>
 </template>
 
 <style scoped>
