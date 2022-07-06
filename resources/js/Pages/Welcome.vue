@@ -11,7 +11,9 @@ defineProps({
 
 <template>
 <h1>Welcome to EPUERO WEB</h1>
-<a href="login">Login disini</a>
+<Link :href="route('login')" class="text-sm text-blue-600">
+    Login Disini
+</Link>
 </template>
 
 <style scoped>
