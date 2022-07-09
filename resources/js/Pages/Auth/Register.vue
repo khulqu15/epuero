@@ -33,7 +33,7 @@ const submit = () => {
         </div>
         
         <!-- Section Login -->
-        <div class="relative h-full mr-auto lg:w-5/12 bg-transparent p-4">
+        <div class="relative h-full mr-auto lg:w-5/12 bg-white p-4">
             <img class="w-36 -mb-5" src="../../Assets/img/logo-text.png" alt="">
             <div class="m-auto py-12 px-6 sm:p-20 xl:w-10/12">
                 <div class="space-y-2">

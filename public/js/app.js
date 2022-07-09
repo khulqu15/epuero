@@ -24697,7 +24697,7 @@ var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
 );
 
 var _hoisted_3 = {
-  "class": "relative h-full mr-auto lg:w-5/12 bg-transparent p-4"
+  "class": "relative h-full mr-auto lg:w-5/12 bg-white p-4"
 };
 
 var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
