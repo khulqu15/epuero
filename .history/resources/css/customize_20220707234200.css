@@ -1,0 +1,20 @@
+.dots-header {
+    display: block;
+    margin: 10px 5px;
+    transition: all .3 ease-in-out !important;
+}
+.dots-header[aria-current="true"] {
+    height: 1.5rem !important;
+    background-color: #3f83f8 !important;
+    transform: scale(1.5);
+}
+
+.dots-header[aria-current="false"] {
+    transform: scale(1);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.caption-header {
+    background-color: rgba(0, 0, 0, 0.5);
+    
+}
