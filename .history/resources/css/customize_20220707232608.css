@@ -1,8 +1,0 @@
-.dots-header[aria-current="true"] {
-    background-color: #3f83f8 !important;
-    transform: scale(1.2);
-}
-
-.dots-header[aria-current="false"] {
-    background-color: rgba(0, 0, 0, 0.25);
-}
