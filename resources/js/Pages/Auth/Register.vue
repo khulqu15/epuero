@@ -1,21 +1,4 @@
 <template>
-<<<<<<< HEAD
-    <Head title="Register" />
-
-    <div class="2xl:container h-screen m-auto">
-        <!-- Banner -->
-        <div hidden class="fixed inset-0 w-full lg:block bg-gray-50">
-            <img class="w-1/2 absolute -translate-y-52 top-1/2 left-1/2 md:w-1/5" src="../../Assets/img/epuero-dev.png" alt="">
-        </div>
-        
-        <!-- Section Login -->
-        <div class="relative h-full mr-auto lg:w-5/12 bg-white p-4">
-            <img class="w-36 -mb-5" src="../../Assets/img/logo-text.png" alt="">
-            <div class="m-auto py-12 px-6 sm:p-20 xl:w-10/12">
-                <div class="space-y-2">
-                    <h1 class="font-bold leading-tight text-3xl text-blue-600">Sign Up</h1>
-                    <p class="text-sm text-gray-600">Become a unit rescue</p>
-=======
     <Head title="Register"/>
     <div id="register_page">
         <div class="grid grid-cols-3">
@@ -23,7 +6,6 @@
                 <div @click="goPage('home')" class="relative top-0 left-0 px-8 md:px-12 py-8 z-10 cursor-pointer">
                     <img src="/images/logo-origin.png" class="w-16 inline-block" alt="Logo">
                     <h3 class="font-bold text-xl uppercase relative top-2 inline-block">Epuero</h3>
->>>>>>> 1aa74ddb4c195dd434acfe1907a2b3dac8153519
                 </div>
                 <div id="login_content" class="px-8 mt-3">
                     <a href="/" class="text-gray-900 relative -top-3 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-4 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">
