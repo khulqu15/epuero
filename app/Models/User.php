@@ -10,11 +10,9 @@ use Illuminate\Support\Facades\Hash;
 use Laravel\Fortify\TwoFactorAuthenticatable;
 use Laravel\Jetstream\HasProfilePhoto;
 use Laravel\Sanctum\HasApiTokens;
-use Veelasky\LaravelHashId\Eloquent\HashableId;
 
 class User extends Authenticatable
 {
-    use HashableId;
     use HasApiTokens;
     use HasFactory;
     use HasProfilePhoto;
@@ -35,6 +33,10 @@ class User extends Authenticatable
         'email',
         'password',
     ];
+
+    protected $hashKey = 'id';
+    protected $hashColumnName = 'id';
+    protected $shouldHashPersist = true;
 
     /**
      * The attributes that should be hidden for serialization.
