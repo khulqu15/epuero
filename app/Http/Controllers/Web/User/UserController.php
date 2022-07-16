@@ -56,6 +56,12 @@ class UserController extends Controller
         return redirect()->route('app.user.index');
     }
 
+    public function addRelation(UserAction $action, User $user): RedirectResponse
+    {
+        $action->add_relation($user);
+        return redirect()->route('app.user.index');
+    }
+
     protected function component(string $name): string
     {
         return 'App/User/'.$name;

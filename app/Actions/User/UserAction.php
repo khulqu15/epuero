@@ -50,4 +50,10 @@ class UserAction
 
         return $user;
     }
+
+    public function add_relation(User $user): User
+    {
+        // add relation code, see stackoverflow
+        return $user;
+    }
 }
