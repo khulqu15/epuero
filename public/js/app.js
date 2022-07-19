@@ -41746,15 +41746,83 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* binding */ render)
 /* harmony export */ });
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+/* harmony import */ var _Assets_wallpp_login_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../Assets/wallpp-login.jpg */ "./resources/js/Assets/wallpp-login.jpg");
 
 
-var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "w-20 h-20 rounded-full border border-gray-600"
-}, null, -1
+var _hoisted_1 = {
+  "class": "flex items-center justify-center mb-14"
+};
+var _hoisted_2 = {
+  "class": "flex flex-col items-center"
+};
+
+var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "border border-slate-200 relative w-28 h-28 overflow-hidden bg-gray-200 rounded-full mb-3 md:mb-0 dark:bg-gray-700"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
+  src: _Assets_wallpp_login_jpg__WEBPACK_IMPORTED_MODULE_1__["default"],
+  alt: ""
+})], -1
+/* HOISTED */
+);
+
+var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", {
+  "class": "mt-5 mb-1 text-2xl font-semibold"
+}, "Imam Shofiuddin", -1
+/* HOISTED */
+);
+
+var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+  "class": "mb-5 font-light text-center"
+}, "Lorem ipsum dolor sit amet. Necessitatibus assumenda vel", -1
+/* HOISTED */
+);
+
+var _hoisted_6 = {
+  "class": "flex flex-col items-center menus md:flex-row"
+};
+var _hoisted_7 = {
+  "class": "flex flex-col justify-center items-center btn w-60 h-44 border-slate-200 shadow-sm border bg-white rounded m-2"
+};
+
+var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+  "class": "mt-3"
+}, "Setting - Fire Detection", -1
+/* HOISTED */
+);
+
+var _hoisted_9 = {
+  "class": "flex flex-col justify-center items-center btn w-60 h-44 border-slate-200 shadow-sm border bg-white rounded m-2"
+};
+
+var _hoisted_10 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+  "class": "mt-3"
+}, "Setting - Geomapping", -1
+/* HOISTED */
+);
+
+var _hoisted_11 = {
+  "class": "flex flex-col justify-center items-center btn w-60 h-44 border-slate-200 shadow-sm border bg-white rounded m-2"
+};
+
+var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+  "class": "mt-3"
+}, "Setting - User Account", -1
+/* HOISTED */
+);
+
+var _hoisted_13 = {
+  "class": "flex flex-col justify-center items-center btn w-60 h-44 border-slate-200 shadow-sm border bg-white rounded m-2"
+};
+
+var _hoisted_14 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+  "class": "mt-3"
+}, "Setting - Log", -1
 /* HOISTED */
 );
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
+  var _component_Icon = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Icon");
+
   var _component_dashboard_layout = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("dashboard-layout");
 
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_dashboard_layout, {
@@ -41762,7 +41830,19 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     label: "Setting"
   }, {
     content: (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [_hoisted_1];
+      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [_hoisted_3, _hoisted_4, _hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Icon, {
+        icon: "akar-icons:fire",
+        "class": "flex-shrink-0 w-14 h-14 transition duratishrink-0 w-6 h-6 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+      }), _hoisted_8]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Icon, {
+        icon: "gis:contour-map",
+        "class": "flex-shrink-0 w-14 h-14 transition duratishrink-0 w-6 h-6 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+      }), _hoisted_10]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", _hoisted_11, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Icon, {
+        icon: "akar-icons:person",
+        "class": "flex-shrink-0 w-14 h-14 transition duratishrink-0 w-6 h-6 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+      }), _hoisted_12]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", _hoisted_13, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Icon, {
+        icon: "akar-icons:clipboard",
+        "class": "flex-shrink-0 w-14 h-14 transition duratishrink-0 w-6 h-6 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+      }), _hoisted_14])])])])];
     }),
     _: 1
     /* STABLE */
@@ -60026,6 +60106,21 @@ var deepmerge_1 = deepmerge;
 
 module.exports = deepmerge_1;
 
+
+/***/ }),
+
+/***/ "./resources/js/Assets/wallpp-login.jpg":
+/*!**********************************************!*\
+  !*** ./resources/js/Assets/wallpp-login.jpg ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/wallpp-login.jpg?f0455626c41b462b455e76ef5181daa7");
 
 /***/ }),
 
