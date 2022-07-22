@@ -10,23 +10,23 @@
                     <p class="mb-5 font-light text-center">Lorem ipsum dolor sit amet. Necessitatibus assumenda vel</p>
                     <div class="flex flex-col items-center menus lg:flex-row">
                         <div class="flex flex-col justify-center items-center md:flex-row">
-                            <button class="flex flex-col justify-center items-center btn w-60 h-44 border-slate-200 shadow-sm border bg-white rounded m-2">
-                                <Icon icon="akar-icons:fire" class="flex-shrink-0 w-14 h-14 transition duratishrink-0 w-6 h-6 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"/>
-                                <p class="mt-3">Setting - Fire Detection</p>
+                            <button class="transition ease-in-out duration-300 group flex flex-col justify-center items-center btn w-60 h-44 border-slate-200 shadow-sm border bg-white rounded m-2 bg-gradient-to-r hover:from-cyan-500 hover:to-indigo-700">
+                                <Icon icon="akar-icons:fire" class="flex-shrink-0 w-14 h-14 duratishrink-0 duration-75 dark:text-gray-400 group-hover:text-white group-hover:w-20 group-hover:h-20 dark:group-hover:text-white"/>
+                                <p class="group-hover:text-white mt-3">Setting - Fire Detection</p>
                             </button> 
-                            <button class="flex flex-col justify-center items-center btn w-60 h-44 border-slate-200 shadow-sm border bg-white rounded m-2">
-                                <Icon icon="gis:contour-map" class="flex-shrink-0 w-14 h-14 transition duratishrink-0 w-6 h-6 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"/>
-                                <p class="mt-3">Setting - Geomapping</p>
+                            <button class="transition ease-in-out duration-300 group flex flex-col justify-center items-center btn w-60 h-44 border-slate-200 shadow-sm border bg-white rounded m-2 bg-gradient-to-r hover:from-cyan-500 hover:to-indigo-700">
+                                <Icon icon="gis:contour-map" class="flex-shrink-0 w-14 h-14 duratishrink-0 duration-75 dark:text-gray-400 group-hover:text-white group-hover:w-20 group-hover:h-20 dark:group-hover:text-white"/>
+                                <p class="group-hover:text-white mt-3">Setting - Geomapping</p>
                             </button>
                         </div>
                         <div class="flex flex-col justify-center items-center md:flex-row">
-                            <button class="flex flex-col justify-center items-center btn w-60 h-44 border-slate-200 shadow-sm border bg-white rounded m-2">
-                                <Icon icon="akar-icons:person" class="flex-shrink-0 w-14 h-14 transition duratishrink-0 w-6 h-6 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"/>
-                                <p class="mt-3">Setting - User Account</p>
+                            <button class="transition ease-in-out duration-300 group flex flex-col justify-center items-center btn w-60 h-44 border-slate-200 shadow-sm border bg-white rounded m-2 bg-gradient-to-r hover:from-cyan-500 hover:to-indigo-700">
+                                <Icon icon="akar-icons:person" class="flex-shrink-0 w-14 h-14 duratishrink-0 duration-75 dark:text-gray-400 group-hover:text-white group-hover:w-20 group-hover:h-20 dark:group-hover:text-white"/>
+                                <p class="group-hover:text-white mt-3">Setting - User Account</p>
                             </button> 
-                            <button class="flex flex-col justify-center items-center btn w-60 h-44 border-slate-200 shadow-sm border bg-white rounded m-2">
-                                <Icon icon="akar-icons:clipboard" class="flex-shrink-0 w-14 h-14 transition duratishrink-0 w-6 h-6 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"/>
-                                <p class="mt-3">Setting - Log</p>
+                            <button class="transition ease-in-out duration-300 group flex flex-col justify-center items-center btn w-60 h-44 border-slate-200 shadow-sm border bg-white rounded m-2 bg-gradient-to-r hover:from-cyan-500 hover:to-indigo-700">
+                                <Icon icon="akar-icons:clipboard" class="flex-shrink-0 w-14 h-14 duratishrink-0 duration-75 dark:text-gray-400 group-hover:text-white group-hover:w-20 group-hover:h-20 dark:group-hover:text-white"/>
+                                <p class="group-hover:text-white mt-3">Setting - Log</p>
                             </button>
                         </div>
                     </div>

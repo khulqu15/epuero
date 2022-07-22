@@ -41784,21 +41784,21 @@ var _hoisted_7 = {
   "class": "flex flex-col justify-center items-center md:flex-row"
 };
 var _hoisted_8 = {
-  "class": "flex flex-col justify-center items-center btn w-60 h-44 border-slate-200 shadow-sm border bg-white rounded m-2"
+  "class": "transition ease-in-out duration-300 group flex flex-col justify-center items-center btn w-60 h-44 border-slate-200 shadow-sm border bg-white rounded m-2 bg-gradient-to-r hover:from-cyan-500 hover:to-indigo-700"
 };
 
 var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
-  "class": "mt-3"
+  "class": "group-hover:text-white mt-3"
 }, "Setting - Fire Detection", -1
 /* HOISTED */
 );
 
 var _hoisted_10 = {
-  "class": "flex flex-col justify-center items-center btn w-60 h-44 border-slate-200 shadow-sm border bg-white rounded m-2"
+  "class": "transition ease-in-out duration-300 group flex flex-col justify-center items-center btn w-60 h-44 border-slate-200 shadow-sm border bg-white rounded m-2 bg-gradient-to-r hover:from-cyan-500 hover:to-indigo-700"
 };
 
 var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
-  "class": "mt-3"
+  "class": "group-hover:text-white mt-3"
 }, "Setting - Geomapping", -1
 /* HOISTED */
 );
@@ -41807,21 +41807,21 @@ var _hoisted_12 = {
   "class": "flex flex-col justify-center items-center md:flex-row"
 };
 var _hoisted_13 = {
-  "class": "flex flex-col justify-center items-center btn w-60 h-44 border-slate-200 shadow-sm border bg-white rounded m-2"
+  "class": "transition ease-in-out duration-300 group flex flex-col justify-center items-center btn w-60 h-44 border-slate-200 shadow-sm border bg-white rounded m-2 bg-gradient-to-r hover:from-cyan-500 hover:to-indigo-700"
 };
 
 var _hoisted_14 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
-  "class": "mt-3"
+  "class": "group-hover:text-white mt-3"
 }, "Setting - User Account", -1
 /* HOISTED */
 );
 
 var _hoisted_15 = {
-  "class": "flex flex-col justify-center items-center btn w-60 h-44 border-slate-200 shadow-sm border bg-white rounded m-2"
+  "class": "transition ease-in-out duration-300 group flex flex-col justify-center items-center btn w-60 h-44 border-slate-200 shadow-sm border bg-white rounded m-2 bg-gradient-to-r hover:from-cyan-500 hover:to-indigo-700"
 };
 
 var _hoisted_16 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
-  "class": "mt-3"
+  "class": "group-hover:text-white mt-3"
 }, "Setting - Log", -1
 /* HOISTED */
 );
@@ -41838,16 +41838,16 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     content: (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
       return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [_hoisted_3, _hoisted_4, _hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Icon, {
         icon: "akar-icons:fire",
-        "class": "flex-shrink-0 w-14 h-14 transition duratishrink-0 w-6 h-6 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+        "class": "flex-shrink-0 w-14 h-14 duratishrink-0 duration-75 dark:text-gray-400 group-hover:text-white group-hover:w-20 group-hover:h-20 dark:group-hover:text-white"
       }), _hoisted_9]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Icon, {
         icon: "gis:contour-map",
-        "class": "flex-shrink-0 w-14 h-14 transition duratishrink-0 w-6 h-6 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+        "class": "flex-shrink-0 w-14 h-14 duratishrink-0 duration-75 dark:text-gray-400 group-hover:text-white group-hover:w-20 group-hover:h-20 dark:group-hover:text-white"
       }), _hoisted_11])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_12, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", _hoisted_13, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Icon, {
         icon: "akar-icons:person",
-        "class": "flex-shrink-0 w-14 h-14 transition duratishrink-0 w-6 h-6 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+        "class": "flex-shrink-0 w-14 h-14 duratishrink-0 duration-75 dark:text-gray-400 group-hover:text-white group-hover:w-20 group-hover:h-20 dark:group-hover:text-white"
       }), _hoisted_14]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", _hoisted_15, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Icon, {
         icon: "akar-icons:clipboard",
-        "class": "flex-shrink-0 w-14 h-14 transition duratishrink-0 w-6 h-6 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+        "class": "flex-shrink-0 w-14 h-14 duratishrink-0 duration-75 dark:text-gray-400 group-hover:text-white group-hover:w-20 group-hover:h-20 dark:group-hover:text-white"
       }), _hoisted_16])])])])])];
     }),
     _: 1
