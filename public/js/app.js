@@ -37276,8 +37276,27 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var _iconify_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @iconify/vue */ "./node_modules/@iconify/vue/dist/iconify.mjs");
+/* harmony import */ var _Layouts_DashboardLayout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/Layouts/DashboardLayout */ "./resources/js/Layouts/DashboardLayout.vue");
+/* harmony import */ var _Components_ExampleChart__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/Components/ExampleChart */ "./resources/js/Components/ExampleChart.vue");
+/* harmony import */ var _Components_UnderConstruction__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/Components/UnderConstruction */ "./resources/js/Components/UnderConstruction.vue");
+
+
+
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  name: "Index.vue"
+  name: "Index.vue",
+  data: function data() {
+    return {
+      active_vehicle: 1
+    };
+  },
+  components: {
+    DashboardLayout: _Layouts_DashboardLayout__WEBPACK_IMPORTED_MODULE_1__["default"],
+    ExampleChart: _Components_ExampleChart__WEBPACK_IMPORTED_MODULE_2__["default"],
+    Icon: _iconify_vue__WEBPACK_IMPORTED_MODULE_0__.Icon,
+    UnderConstruction: _Components_UnderConstruction__WEBPACK_IMPORTED_MODULE_3__["default"]
+  }
 });
 
 /***/ }),
@@ -40767,7 +40786,7 @@ var _hoisted_21 = {
   "aria-labelledby": "dropdownDefault"
 };
 var _hoisted_22 = {
-  href: "#",
+  href: "/app/profile",
   "class": "block px-4 py-2 hover:bg-gray-100 flex gap-2 content-center rounded dark:hover:bg-gray-600 dark:hover:text-white"
 };
 
@@ -41903,8 +41922,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "render": () => (/* binding */ render)
 /* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return null;
+  var _component_under_construction = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("under-construction");
+
+  var _component_dashboard_layout = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("dashboard-layout");
+
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_dashboard_layout, {
+    active: "profile",
+    label: "Profile"
+  }, {
+    content: (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_under_construction)];
+    }),
+    _: 1
+    /* STABLE */
+
+  });
 }
 
 /***/ }),

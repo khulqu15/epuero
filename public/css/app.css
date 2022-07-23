@@ -2918,14 +2918,6 @@ html {
   --tw-shadow: var(--tw-shadow-colored);
 }
 
-.hover\:transition:hover {
-  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
 .focus\:z-10:focus {
   z-index: 10;
 }
@@ -3137,16 +3129,8 @@ html {
   opacity: 0.25;
 }
 
-.group:hover .group-hover\:h-24 {
-  height: 6rem;
-}
-
 .group:hover .group-hover\:h-20 {
   height: 5rem;
-}
-
-.group:hover .group-hover\:w-24 {
-  width: 6rem;
 }
 
 .group:hover .group-hover\:w-20 {

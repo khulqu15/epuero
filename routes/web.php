@@ -54,4 +54,5 @@ Route::name('app.')->prefix('app')->middleware([
     })->name('setting');
     Route::get('/fire', [\App\Http\Controllers\Web\Fire\FireController::class, 'index'])->name('fire');
     Route::get('/geograph', [\App\Http\Controllers\Web\Geograph\GeographController::class, 'index'])->name('geograph');
+    Route::get('/profile', [\App\Http\Controllers\Web\User\UserController::class, 'index'])->name('profile');
 });
