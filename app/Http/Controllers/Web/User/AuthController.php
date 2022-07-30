@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Web\User;
 use App\Actions\User\AuthAction;
 use App\Actions\User\UserAction;
 use App\Http\Controllers\Controller;
+use App\Models\User;
 use Illuminate\Http\RedirectResponse;
 
 class AuthController extends Controller
@@ -20,4 +21,10 @@ class AuthController extends Controller
         $action->login();
         return redirect()->route('app.home')->with('notification', 'Login Success');
     }
+
+    // public function updateProfile(UserAction $action, User $user): RedirectResponse
+    // {
+    //     $action->update($user);
+    //     return redirect()->
+    // }
 }

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav class="bg-white fixed w-full z-40 border-gray-200 px-2 sm:px-4 pt-2.5 pb-2 rounded dark:bg-gray-800">
+    <nav class="bg-white fixed w-full z-40 border-gray-200 px-2 sm:px-4 pt-2.5 pb-2 dark:bg-gray-800">
         <div class="md:container py-4 flex flex-wrap justify-between items-center mx-auto">
             <div @click="goPage('home')" class="cursor-pointer flex items-center">
                 <img src="/images/logo.webp" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
