@@ -19,9 +19,9 @@
                             <div class="py-2 px-3 text-sm border-b pb-5 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In elit sem, facilisis non metus ut, euismod finibus urna. Nam id elementum libero. Morbi semper ornare viverra. Vivamus consequat tristique ante eu malesuada. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</div>
                             <div class="flex flex-row text-lg font-semibold py-2 pl-3">
                                 <h3 class="text-lg font-semibold">My Profile</h3>
-                                <button class="ml-3">
+                                <a href="/app/edit" class="ml-3">
                                     <Icon icon="akar-icons:pencil" class="text-blue-500 flex-shrink-0 w-5 h-5 duratishrink-0 duration-75 dark:text-gray-400 group-hover:text-white group-hover:w-20 group-hover:h-20 dark:group-hover:text-white"/>
-                                </button> 
+                                </a> 
                             </div>
                             <div class="px-3 py-3 grid gap-6 mb-2 md:grid-cols-2">
                                 <div class="flex flex-col">
