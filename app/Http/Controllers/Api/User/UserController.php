@@ -16,7 +16,10 @@ class UserController extends Controller
      */
     public function index(): JsonResponse
     {
-        $user = User::query()->find(1);
+        echo 'Hai wkwkwk';
+        die;
+        $user = User::query()->get();
+        dump($user);
         $hased = $user->hashIdRaw;
         return response()->json([$hased]);
     }

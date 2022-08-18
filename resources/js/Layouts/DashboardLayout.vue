@@ -1,6 +1,6 @@
 <template>
     <div class="grid grid-cols-6 bg-gray-50 h-screen">
-<!--        col-span-6 sm:col-span-4 md:col-span-5-->
+<!--col-span-6 sm:col-span-4 md:col-span-5-->
         <div class="transition-all bg-white" :class="{'-left-36 opacity-0 invisible hidden relative': !show_navbar, 'col-span-6 fixed sm:relative sm:col-span-2 md:col-span-1 z-20': show_navbar}">
             <aside class="w-full" aria-label="Sidebar">
                 <div class="overflow-y-auto py-4 px-3 bg-white min-h-screen overflow-auto rounded dark:bg-gray-800 relative">
@@ -49,25 +49,25 @@
                             </li>
                         </ul>
                         <button id="dropdownDefault" data-dropdown-toggle="dropdown" class="text-gray-700 gap-3 w-full justify-center bg-gray-100 hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
-                            <div class="relative w-8 h-8 overflow-hidden bg-gray-200 rounded-full dark:bg-gray-600">
-                                <svg class="absolute w-12 h-12 text-gray-500 -left-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg>
-                            </div>
-                            <span class="inline-block">Imam</span>
+                                <button v-if="$page.props.jetstream.managesProfilePhotos" class="flex text-sm border-2 border-transparent rounded-full focus:outline-none focus:border-gray-300 transition">
+                                    <img class="h-8 w-8 rounded-full object-cover" :src="$page.props.user.profile_photo_url" :alt="$page.props.user.name">
+                                </button>
+                            <span class="inline-block">{{ $page.props.user.username }}</span>
                         <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
                         <div id="dropdown" class="z-10 hidden w-full px-4">
                             <div class="bg-white w-full divide-y divide-gray-100 rounded shadow p-2 dark:bg-gray-700">
                                 <div class="flex justify-start content-center gap-3">
-                                    <div class="relative w-8 h-8 overflow-hidden bg-gray-200 rounded-full dark:bg-gray-600">
-                                        <svg class="absolute w-12 h-12 text-gray-500 -left-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg>
-                                    </div>
+                                    <button v-if="$page.props.jetstream.managesProfilePhotos" class="flex text-sm border-2 border-transparent rounded-full focus:outline-none focus:border-gray-300 transition">
+                                        <img class="h-8 w-8 rounded-full object-cover" :src="$page.props.user.profile_photo_url" :alt="$page.props.user.name">
+                                    </button>
                                     <div>
-                                        <h5 class="font-semibold text-sm text-gray-800">Imam Shofiuddin</h5>
-                                        <span class="text-xs relative -top-2 text-gray-400">Admin</span>
+                                        <h5 class="font-semibold text-sm text-gray-800">{{ $page.props.user.name }}</h5>
+                                        <span class="text-xs relative -top-2 text-gray-400">{{ $page.props.user.role }}</span>
                                     </div>
                                 </div>
                                 <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefault">
                                     <li>
-                                        <a href="/app/profile" class="block px-4 py-2 hover:bg-gray-100 flex gap-2 content-center rounded dark:hover:bg-gray-600 dark:hover:text-white">
+                                        <a href="profile" class="block px-4 py-2 hover:bg-gray-100 flex gap-2 content-center rounded dark:hover:bg-gray-600 dark:hover:text-white">
                                             <Icon icon="ant-design:user-outlined" class="inline-block text-xl self-center"/>
                                             <div>
                                                 <h5 class="font-semibold text-sm text-gray-800">Profile</h5>
@@ -85,10 +85,12 @@
                                         </a>
                                     </li>
                                     <li class="text-center">
-                                        <a href="#" class="block bg-red-500 px-4 py-2 hover:bg-red-600 text-white rounded dark:hover:bg-gray-600 dark:hover:text-white">
-                                            <Icon icon="heroicons-outline:logout" class="inline-block text-lg"/>
-                                            <span class="inline-block mx-2">Logout</span>
-                                        </a>
+                                        <!-- <form @submit="onSubmit()" method="post"> -->
+                                            <button @click="onLogout()" type="button" class="w-full block bg-red-500 px-4 py-2 hover:bg-red-600 text-white rounded dark:hover:bg-gray-600 dark:hover:text-white">
+                                                <Icon icon="heroicons-outline:logout" class="inline-block text-lg"/>
+                                                <span class="inline-block mx-2">Logout</span>
+                                            </button>
+                                        <!-- </form> -->
                                     </li>
                                 </ul>
                             </div>
@@ -192,6 +194,11 @@ export default {
             show_navbar: true,
             show_notification: false,
         }
+    },
+    methods: {
+        onLogout() {
+            this.$inertia.post(this.route('post.logout'))
+        },
     },
     components: {
         Icon,

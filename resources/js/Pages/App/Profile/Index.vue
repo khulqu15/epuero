@@ -30,7 +30,7 @@ const form = useForm({
                         <div class="rounded bg-white border border-slate-200 p-5 w-full">
                             <div class="flex flex-row text-lg font-semibold py-2 pl-3">
                                 <h3 class="text-lg font-semibold">My Profile</h3>
-                                <a href="/app/edit" class="ml-3">
+                                <a href="edit" class="ml-3">
                                     <Icon icon="akar-icons:pencil" class="text-blue-500 flex-shrink-0 w-5 h-5 duratishrink-0 duration-75 dark:text-gray-400 group-hover:text-white group-hover:w-20 group-hover:h-20 dark:group-hover:text-white"/>
                                 </a> 
                             </div>

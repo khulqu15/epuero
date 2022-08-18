@@ -39,6 +39,7 @@ Route::get('/method', function() {
 Route::name('post.')->group(function() {
     Route::post('/register', [\App\Http\Controllers\Web\User\AuthController::class, 'register'])->name('register');
     Route::post('/login', [\App\Http\Controllers\Web\User\AuthController::class, 'login'])->name('login');
+    Route::post('/logout', [\App\Http\Controllers\Web\User\AuthController::class, 'logout'])->name('logout');
 });
 
 Route::name('app.')->prefix('app')->middleware([
@@ -54,6 +55,7 @@ Route::name('app.')->prefix('app')->middleware([
     })->name('setting');
     Route::get('/fire', [\App\Http\Controllers\Web\Fire\FireController::class, 'index'])->name('fire');
     Route::get('/geograph', [\App\Http\Controllers\Web\Geograph\GeographController::class, 'index'])->name('geograph');
-    Route::get('/profile', [\App\Http\Controllers\Web\User\UserController::class, 'index'])->name('profile');
-    Route::get('/edit', [\App\Http\Controllers\Web\User\UserController::class, 'edit'])->name('edit');
+    Route::get('/profile', [\App\Http\Controllers\Web\Profile\ProfileController::class, 'index'])->name('profile');
+    Route::get('/edit', [\App\Http\Controllers\Web\Profile\ProfileController::class, 'edit'])->name('edit');
+    Route::post('/update', [\App\Http\Controllers\Web\Profile\ProfileController::class, 'update'])->name('update');
 });

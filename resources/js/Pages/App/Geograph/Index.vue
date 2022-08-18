@@ -18,6 +18,9 @@ export default {
             active_vehicle: 1,
         }
     },
+    mounted() {
+        this.$writeLocationData('20','5679795879','790067067');
+    },
     components: {
         DashboardLayout,
         ExampleChart,

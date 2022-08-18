@@ -4,11 +4,11 @@
 
             <div class="py-4 grid grid-cols-5 items-center">
                 <div class="col-span-5 md:col-span-3 inline-block md:flex items-center gap-3">
-                    <div class="relative w-16 h-16 overflow-hidden bg-gray-200 rounded-full mb-3 md:mb-0 dark:bg-gray-700">
-                        <svg class="absolute w-20 h-20 text-gray-400 -left-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg>
-                    </div>
+                    <button v-if="$page.props.jetstream.managesProfilePhotos" class="flex text-sm border-2 border-transparent rounded-full focus:outline-none focus:border-gray-300 transition">
+                        <img class="h-16 w-16 rounded-full object-cover" :src="$page.props.user.profile_photo_url" :alt="$page.props.user.name">
+                    </button>
                     <div>
-                        <h1 class="text-xl font-semibold">Imam Shofiudin</h1>
+                        <h1 class="text-xl font-semibold">{{ $page.props.user.name }}</h1>
                         <span class="text-gray-700 text-sm">We're very happy to see you again on your personal dashboard.</span>
                     </div>
                 </div>
