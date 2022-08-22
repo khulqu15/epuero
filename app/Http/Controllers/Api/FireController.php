@@ -8,6 +8,12 @@ use Kreait\Firebase\Contract\Database;
 
 class FireController extends Controller
 {
+
+    public function __construct(Database $database)
+    {
+        $this->database = $database;
+        $this->tablename = 'location';
+    }
     /**
      * Display a listing of the resource.
      *
@@ -15,7 +21,14 @@ class FireController extends Controller
      */
     public function index()
     {
-        //
+        $location = $this->database->getReference($this->tablename);
+        $snapshot = $location->getSnapshot();
+        $value = $snapshot->getValue();
+        return response()->json([
+            'success' => true,
+            'message' => 'success',
+            'data' => $value,
+        ]);
     }
 
     /**
@@ -35,8 +48,22 @@ class FireController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {
-        //
+    {   
+        $ref_tablename = 'location';
+        $postData = [
+            'latitude'=>$request->Latitude,
+            'longitude'=>$request->Longitude,
+            'altitude'=>$request->Altitude,
+            'location'=>$request->Location,
+        ];
+        
+        $postRef = $this->database->getReference($ref_tablename)->push($postData);
+
+        return response()->json([
+            'success' => true,
+            'message' => 'success',
+            'data' => $postData
+        ]);
     }
 
     /**
@@ -70,7 +97,21 @@ class FireController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $key = $id;
+        $updateData = [
+            'latitude'=>$request->Latitude,
+            'longitude'=>$request->Longitude,
+            'altitude'=>$request->Altitude,
+            'location'=>$request->Location,
+        ];
+
+        $res_updated = $this->database->getReference($this->tablename.'/'.$key)->update($updateData);
+
+        return response()->json([
+            'success' => true,
+            'message' => 'success',
+            'data' => $updateData,
+        ]);
     }
 
     /**
@@ -81,6 +122,13 @@ class FireController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $key = $id;
+
+        $res_updated = $this->database->getReference($this->tablename.'/'.$key)->remove();
+
+        return response()->json([
+            'success' => true,
+            'message' => 'success',
+        ]);
     }
 }

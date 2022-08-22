@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\API\FireController;
 use App\Http\Controllers\API\GeoController;
 use App\Http\Controllers\API\ImgGeoController;
 use Illuminate\Http\Request;
@@ -27,3 +28,6 @@ Route::middleware('json.request')->group(function () {
         Route::post('img_geograph/{id}', [ImgGeoController::class,'update']);
     });
 });
+
+Route::resource('fire', FireController::class);
+Route::post('fire/{id}', [FireController::class, 'update']);
