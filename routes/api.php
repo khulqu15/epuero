@@ -31,3 +31,4 @@ Route::middleware('json.request')->group(function () {
 
 Route::resource('fire', FireController::class);
 Route::post('fire/{id}', [FireController::class, 'update']);
+Route::get('fire/{id}', [FireController::class, 'show']);

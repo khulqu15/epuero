@@ -62,7 +62,7 @@ class FireController extends Controller
         return response()->json([
             'success' => true,
             'message' => 'success',
-            'data' => $postData
+            'data' => $postData,
         ]);
     }
 
@@ -74,7 +74,13 @@ class FireController extends Controller
      */
     public function show($id)
     {
-        //
+        $key = $id;
+        $result = $this->database->getReference($this->tablename.'/'.$key)->getSnapshot()->getValue();
+        return response()->json([
+            'success' => true,
+            'message' => 'success',
+            'data' => $result,
+        ]);
     }
 
     /**
