@@ -1,13 +1,12 @@
 <?php
 
-namespace App\Http\Controllers\Web\Fire;
+namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
-use Inertia\Response;
 use Kreait\Firebase\Contract\Database;
-class FireController extends Controller
+
+class DashboardController extends Controller
 {
     public function __construct(Database $database)
     {
@@ -19,7 +18,7 @@ class FireController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(): Response
+    public function index()
     {
         $location = $this->database->getReference($this->tablename);
         $snapshot = $location->getSnapshot();
@@ -92,10 +91,5 @@ class FireController extends Controller
     public function destroy($id)
     {
         //
-    }
-
-    protected function component(string $name): string
-    {
-        return 'App/Fire/'.$name;
     }
 }

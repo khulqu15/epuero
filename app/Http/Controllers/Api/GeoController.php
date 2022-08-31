@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Geograph;
 use Illuminate\Http\Request;
 use App\Helpers\ApiFormatter;
+use App\Models\ImageGeo;
 use Exception;
 
 class GeoController extends Controller
@@ -17,7 +18,7 @@ class GeoController extends Controller
      */
     public function index()
     {
-        $data = Geograph::getGeograph()->get();
+        $data = Geograph::all();
 
         if($data){
             return ApiFormatter::cretaeApi(200, 'Success', $data);
@@ -44,26 +45,37 @@ class GeoController extends Controller
      */
     public function store(Request $request)
     {
+        $validate = $request->validate([
+            'location_name' => 'required',
+            'image' => 'required|file|mimes:png,jpg,jpeg',
+            'label' => 'required'
+        ]);
         try {
-            $request->validate([
-                'location_name' => 'required',
-                'image_id' => 'required',
-            ]);
+            $fileName = time().$request->file('image')->getClientOriginalName();
+            $Imgpath = $request->file('image')->storeAs('uploads/GeoCapture',$fileName);
     
+            $setImage = ImageGeo::create([
+                'image' => $Imgpath,
+                'label' => $request->label,
+            ]);
+
+            $idImage = ImageGeo::getLastImage();
+
             $geograph = Geograph::create([
-                'username' => $request->location_name,
-                'address' => $request->image_id
+                'location_name' => $request->location_name,
+                'image_id' => $idImage,
             ]);
-    
-            $data = Geograph::where('id','=', $geograph->id)->get();
             
-            if ($data) {
-                return ApiFormatter::cretaeApi(200, 'Success', $data);
-            } else {
-                return ApiFormatter::cretaeApi(400, 'Failed');
-            }
+            return response()->json([
+                'success' => true,
+                'message' => 'success',
+                'data' => $geograph,
+            ]);
         } catch (Exception $error) {
-            return ApiFormatter::cretaeApi(400, 'Failed');
+            return response()->json([
+                'message'=>'Err',
+                'errors'=>$error->getMessage()
+            ]);
         }
     }
 
@@ -98,7 +110,33 @@ class GeoController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $GeoData = Geograph::find($id); 
+        $ImageData = ImageGeo::find($GeoData->image_id);
+        $validate=$request->validate([
+            'location_name' =>'',
+            'image'=>'',
+            'label'=> '',
+        ]);
+
+        try{
+            if($request->file('image')){
+                $fileName = time().$request->file('image')->getClientOriginalName();
+                $path = $request->file('image')->storeAs('uploads/GeoCapture',$fileName);
+                $validate['image']=$path;
+            }
+            $GeoData->update($validate);
+            $ImageData->update($validate);
+
+            return response()->json([
+                'success' => true,
+                'message' => 'success',
+            ]);
+        } catch (\Exception $e) {
+            return response()->json([
+                'message'=>'Err',
+                'errors'=>$e->getMessage()
+            ]);
+        }
     }
 
     /**
@@ -109,6 +147,21 @@ class GeoController extends Controller
      */
     public function destroy($id)
     {
-        //
+        try{
+            $geograph = Geograph::find($id);
+            $id_image = $geograph->image_id;
+            $image = ImageGeo::find($id_image);
+            $geograph->delete();
+            $image->delete();
+            return response()->json([
+                'success'=>true,
+                'message'=>'Success'
+            ]);
+        } catch (\Exception $e) {
+            return response()->json([
+                'message'=>'Err',
+                'errors'=>$e->getMessage()
+            ]);
+        }
     }
 }

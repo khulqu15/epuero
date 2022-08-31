@@ -26,7 +26,7 @@
                                 :class="{'hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-700': active != 'fire', 'bg-gradient-to-r from-cyan-400 to-indigo-600 text-white hover:from-cyan-500 hover:to-indigo-700': active == 'fire'}">
                                 <Icon icon="akar-icons:fire" class="flex-shrink-0 w-6 h-6 transition duratishrink-0 w-6 h-6 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"/>
                                 <span class="flex-1 ml-3 whitespace-nowrap">Fire Detection</span>
-                                <span class="inline-flex justify-center items-center px-2 ml-3 text-sm font-medium text-gray-800 bg-gray-200 rounded-full dark:bg-gray-700 dark:text-gray-300">Pro</span>
+                                <span class="inline-flex justify-center items-center p-3 ml-3 w-3 h-3 text-sm font-medium text-blue-600 bg-blue-200 rounded-full dark:bg-blue-900 dark:text-blue-200">3</span>
                             </a>
                         </li>
                         <li>

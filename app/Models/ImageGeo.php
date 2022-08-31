@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\DB;
 
 class ImageGeo extends Model
 {
@@ -12,6 +13,11 @@ class ImageGeo extends Model
     protected $fillable = [
         'image',
         'label'
-    ];    
+    ];
+
+    static function getLastImage() {
+        $result = DB::getPdo()->lastInsertId();
+        return $result;
+    }
     protected $hidden = [];
 }

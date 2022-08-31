@@ -5,6 +5,7 @@ namespace App\Http\Controllers\API;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Kreait\Firebase\Contract\Database;
+use Inertia\Inertia;
 
 class FireController extends Controller
 {
@@ -55,6 +56,7 @@ class FireController extends Controller
             'longitude'=>$request->Longitude,
             'altitude'=>$request->Altitude,
             'location'=>$request->Location,
+            'time'=> date("d-m-Y / H:i:s",time()),
         ];
         
         $postRef = $this->database->getReference($ref_tablename)->push($postData);
@@ -109,6 +111,7 @@ class FireController extends Controller
             'longitude'=>$request->Longitude,
             'altitude'=>$request->Altitude,
             'location'=>$request->Location,
+            'time'=>time(),
         ];
 
         $res_updated = $this->database->getReference($this->tablename.'/'.$key)->update($updateData);
@@ -136,5 +139,9 @@ class FireController extends Controller
             'success' => true,
             'message' => 'success',
         ]);
+    }
+    protected function component(string $name): string
+    {
+        return 'App/Fire/'.$name;
     }
 }

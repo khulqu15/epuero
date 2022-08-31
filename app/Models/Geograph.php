@@ -20,5 +20,6 @@ class Geograph extends Model
         ->join('geo_image','geograph.image_id','=','geo_image.id');
         return $result;
     }
+
     protected $hidden = [];
 }

@@ -19,7 +19,7 @@ export default {
         }
     },
     mounted() {
-        this.$writeLocationData('20','5679795879','790067067');
+
     },
     components: {
         DashboardLayout,

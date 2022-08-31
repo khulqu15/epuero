@@ -5,6 +5,10 @@ import { createInertiaApp } from '@inertiajs/inertia-vue3';
 import { InertiaProgress } from '@inertiajs/progress';
 import { initializeApp } from "firebase/app";
 import { getDatabase , push, child, ref, set, get, onValue, update, remove } from "firebase/database";
+import { Form, HasError, AlertError } from 'vform'
+window.Form = Form;
+// Vue.component(HasError.name, HasError);
+// Vue.component(AlertError.name, AlertError);
 
 const appName = window.document.getElementsByTagName('title')[0]?.innerText || 'Laravel';
 
