@@ -27,7 +27,8 @@
         @inertiaHead
         <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
         <script src="https://cdn.tailwindcss.com"></script>
-
+        <script src="https://js.pusher.com/7.2/pusher.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     </head>
     <body class="font-montserrat antialiased">
         @inertia
@@ -36,4 +37,25 @@
             <script src="http://localhost:3000/browser-sync/browser-sync-client.js"></script>
         @endenv
     </body>
+    <script>
+        // Enable pusher logging - don't include this in production
+        Pusher.logToConsole = true;
+
+        var pusher = new Pusher('26bb683f0b816315b894', {
+        cluster: 'ap1'
+        });
+
+        var channel = pusher.subscribe('my-channel');
+        channel.bind('my-event', function(data) {
+        app.messages.push(JSON.stringify(data));
+        });
+
+        // Vue application
+        const app = new Vue({
+        el: '#app',
+        data: {
+            messages: [],
+        },
+        });
+    </script>
 </html>

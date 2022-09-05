@@ -4,17 +4,9 @@ namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use Kreait\Firebase\Contract\Database;
-use Inertia\Inertia;
 
 class FireController extends Controller
 {
-
-    public function __construct(Database $database)
-    {
-        $this->database = $database;
-        $this->tablename = 'location';
-    }
     /**
      * Display a listing of the resource.
      *
@@ -49,7 +41,7 @@ class FireController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {   
+    {
         $ref_tablename = 'location';
         $postData = [
             'latitude'=>$request->Latitude,
@@ -58,7 +50,7 @@ class FireController extends Controller
             'location'=>$request->Location,
             'time'=> date("d-m-Y / H:i:s",time()),
         ];
-        
+
         $postRef = $this->database->getReference($ref_tablename)->push($postData);
 
         return response()->json([

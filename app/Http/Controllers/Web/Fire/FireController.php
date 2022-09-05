@@ -3,97 +3,35 @@
 namespace App\Http\Controllers\Web\Fire;
 
 use App\Http\Controllers\Controller;
+use App\Models\Fire;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
 use Inertia\Response;
-use Kreait\Firebase\Contract\Database;
 class FireController extends Controller
 {
-    public function __construct(Database $database)
+    public function __construct()
     {
-        $this->database = $database;
-        $this->tablename = 'location';
+        $this->middleware('auth');
     }
+
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return Response
      */
-    public function index(): Response
+    public function index(Request $request): Response
     {
-        $location = $this->database->getReference($this->tablename);
-        $snapshot = $location->getSnapshot();
-        $value = $snapshot->getValue();
-
-        return Inertia::render($this->component('Index'), ['fire_data' => $value]);
+        $query = Fire::query();
+        $data = $query->orderBy('created_at', $request->get('sort', 'DESC'));
+        $data->paginate(10);
+        return Inertia::render($this->component('Index'), [$data]);
     }
 
     /**
-     * Show the form for creating a new resource.
+     * Get a component in the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return string
      */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        //
-    }
-
     protected function component(string $name): string
     {
         return 'App/Fire/'.$name;
