@@ -22,9 +22,10 @@ class FireController extends Controller
     public function index(Request $request): Response
     {
         $query = Fire::query();
-        $data = $query->orderBy('created_at', $request->get('sort', 'DESC'));
-        $data->paginate(10);
-        return Inertia::render($this->component('Index'), [$data]);
+        $data = $query->get();
+        return Inertia($this->component('Index'), [
+            "fires" => $data
+        ]);
     }
 
     /**

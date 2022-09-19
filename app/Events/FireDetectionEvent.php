@@ -2,6 +2,7 @@
 
 namespace App\Events;
 
+use App\Models\Fire;
 use Illuminate\Broadcasting\Channel;
 use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Broadcasting\PresenceChannel;
@@ -14,16 +15,16 @@ class FireDetectionEvent implements ShouldBroadcast
 {
     use Dispatchable, InteractsWithSockets, SerializesModels;
 
-    public string $message;
+    public mixed $fire;
 
     /**
      * Create a new event instance.
      *
      * @return void
      */
-    public function __construct(string $message)
+    public function __construct(mixed $fire)
     {
-        $this->message = $message;
+        $this->fire = $fire;
     }
 
     /**
@@ -31,13 +32,21 @@ class FireDetectionEvent implements ShouldBroadcast
      *
      * @return \Illuminate\Broadcasting\Channel|array
      */
-    public function broadcastOn()
+    public function broadcastOn(): Channel
     {
-        return ['my-channel'];
+        return new Channel('fire-detection');
     }
 
-    public function broadcastAs()
+    public function broadcastWith(): array
     {
-        return 'my-event';
+        return [
+            'id' => $this->fire->id,
+            'latitude' => $this->fire->latitude,
+            'longitude' => $this->fire->longitude,
+            'altitude' => $this->fire->altitude,
+            'location' => $this->fire->location,
+            'created_at' => $this->fire->created_at,
+            'updated_at' => $this->fire->updated_at,
+        ];
     }
 }

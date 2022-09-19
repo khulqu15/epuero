@@ -9,7 +9,7 @@ class Fire extends Model
 {
     use HasFactory;
 
-    protected $table = 'fire';
+    protected $table = 'fires';
     protected $fillable = [
         'latitude',
         'longitude',

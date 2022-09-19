@@ -30,8 +30,10 @@
             </tr>
           </thead>
           <tbody>
-            <tr v-for="item in fire_data" class="bg-white border-b">
-              <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">{{ item['time'] }}</td>
+            <tr v-for="item in fires" class="bg-white border-b">
+              <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                  {{ item.created_at }}
+              </td>
               <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
                 {{ item['latitude'] }}
               </td>
@@ -74,19 +76,37 @@ import axios from 'axios'
 
 export default {
     name: "Fire/Index.vue",
-    props : {
-        fire_data: Array
-    },
     data() {
         return {
             active_vehicle: 1,
+            fires: [],
         }
+    },
+    created() {
+        this.fetchFireEndpoint()
+        this.fireListener()
     },
     components: {
         DashboardLayout,
         ExampleChart,
         Icon,
         UnderConstruction,
+    },
+    methods: {
+        fetchFireEndpoint() {
+            axios.get("/api/fire").then((response) => {
+                this.fires = response.data.data
+            })
+        },
+        fireListener() {
+            Echo.channel('fire-detection').listen('FireDetectionEvent', (e) => {
+                console.log(e)
+                this.fires.push(e)
+                this.$inertia.reload({
+                    preserveScroll: true
+                })
+            })
+        }
     }
 }
 </script>

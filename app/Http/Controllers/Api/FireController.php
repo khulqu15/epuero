@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers\API;
 
+use App\Actions\Fire\FireAction;
+use App\Events\FireDetectionEvent;
 use App\Http\Controllers\Controller;
+use App\Models\Fire;
 use Illuminate\Http\Request;
 
 class FireController extends Controller
@@ -10,17 +13,15 @@ class FireController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\JsonResponse
      */
     public function index()
     {
-        $location = $this->database->getReference($this->tablename);
-        $snapshot = $location->getSnapshot();
-        $value = $snapshot->getValue();
+        $data = Fire::all();
         return response()->json([
             'success' => true,
             'message' => 'success',
-            'data' => $value,
+            'data' => $data,
         ]);
     }
 
@@ -38,26 +39,13 @@ class FireController extends Controller
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\JsonResponse
      */
-    public function store(Request $request)
+    public function store(Request $request, FireAction $fireAction)
     {
-        $ref_tablename = 'location';
-        $postData = [
-            'latitude'=>$request->Latitude,
-            'longitude'=>$request->Longitude,
-            'altitude'=>$request->Altitude,
-            'location'=>$request->Location,
-            'time'=> date("d-m-Y / H:i:s",time()),
-        ];
-
-        $postRef = $this->database->getReference($ref_tablename)->push($postData);
-
-        return response()->json([
-            'success' => true,
-            'message' => 'success',
-            'data' => $postData,
-        ]);
+        $action = $fireAction->store($request->all());
+        event(new \App\Events\FireDetectionEvent($action));
+        return response()->json($action);
     }
 
     /**

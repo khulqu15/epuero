@@ -16,8 +16,13 @@
         "laravel/sanctum": "^2.11",
         "laravel/tinker": "^2.5",
         "lorisleiva/laravel-actions": "^2.4",
+<<<<<<< HEAD
         "pusher/pusher-php-server": "^7.0",
         "tightenco/ziggy": "^1.0"
+=======
+        "tightenco/ziggy": "^1.0",
+        "vinkla/hashids": "^10.0"
+>>>>>>> 197873f0bd76902b8964d86a5a1e8d5cfbdf94bf
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
